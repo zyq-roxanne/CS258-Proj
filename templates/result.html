@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block body %}
+
+<h6><font line-height = 0px> QR Code Symbol "{{data}}"</font></h6>
+<div>
+    <img src = {{url_for('static',filename = './1.png')}} width = '200'/>
+</div>
+
+
+{% endblock %}
+
+url_for('static', filename= './images/test.jpg',_t=val1)

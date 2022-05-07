@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name = "discription" content="My QR Code Generator">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+</head>
+
+<body>
+    <form action = "result">
+        <label> Data: <label>
+        <input type="text" name = "data" placeholder = "input data here"/>
+        <input type="submit" name=""  ><br>
+        <lable> Error Corrextion Level: <label><br>
+        <input type = 'radio' name = 'err_corr' value = '1' >L 7%<br>
+        <input type = 'radio' name = 'err_corr' value = '0' checked>M 15%<br>
+        <input type = 'radio' name = 'err_corr' value = '3'>Q 25%<br>
+        <input type = 'radio' name = 'err_corr' value = '2'>H 30%<br>
+    </form>
+    {% block body %}{% endblock %}
+</body>
+</html>
